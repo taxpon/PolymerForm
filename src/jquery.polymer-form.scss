@@ -1,15 +1,15 @@
 //colors
 $color_gallery_approx: #eeeeee;
-$color_coral_red_approx: #f44;
 $color_mountain_mist_approx: #999;
 
 //fonts
 $font_0: helvetica;
 
-.elastic-form {
+.polymer-form {
   width: 100%;
   position: relative;
-  margin: 50px 0;
+  margin-top: 20px;
+  color: rgb(74, 74, 74);
   input {
     width: 100%;
     height: 30px;
@@ -22,7 +22,6 @@ $font_0: helvetica;
   }
   .bar {
     width: 100%;
-    background: $color_gallery_approx;
   }
   .bar-in {
     width: 0;
@@ -32,7 +31,7 @@ $font_0: helvetica;
       width: 100%;
     }
   }
-  label {
+  label.placeholder {
     font-family: $font_0;
     font-size: 18px;
     color: $color_mountain_mist_approx;
@@ -42,7 +41,7 @@ $font_0: helvetica;
     transition: all 0.2s cubic-bezier(.63,0,.55,.96);
     transform-origin: 0 0;
   }
-  &.dirty label {
+  &.dirty label.placeholder {
     left: 2px;
     transform: translateY(-130%) scale(0.8);
   }

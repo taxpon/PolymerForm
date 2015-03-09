@@ -54,5 +54,17 @@ gulp.task('watch', function(){
     gulp.watch('example/css/style.scss', ['example-sass']);
 });
 
+gulp.task('gh-sass', function(){
+    gulp.src('gh-pages/css/*.scss')
+        .pipe(plumber())
+        .pipe(sass({style:'compressd'}))
+        .pipe(pleeease())
+        .pipe(gulp.dest('gh-pages/css/'))
+});
+
+gulp.task('gh', function(){
+    gulp.watch(['gh/pages/css/*.scss'], ['gh-sass']);
+});
+
 gulp.task('deafault', ['watch'], function(){
 });

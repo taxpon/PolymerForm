@@ -1,5 +1,4 @@
 //colors
-$color_gallery_approx: #eeeeee;
 $color_mountain_mist_approx: #999;
 
 //fonts
@@ -16,12 +15,14 @@ $font_0: helvetica;
     padding: 0 5px;
     font-size: 20px;
     border: none;
+    background: transparent;
     &:focus {
       outline: none;
     }
   }
   .bar {
     width: 100%;
+    position: relative;
   }
   .bar-in {
     width: 0;
@@ -32,7 +33,7 @@ $font_0: helvetica;
     }
   }
   label.placeholder {
-    font-family: $font_0;
+//    font-family: $font_0;
     font-size: 18px;
     color: $color_mountain_mist_approx;
     position: absolute;

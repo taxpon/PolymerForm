@@ -1,5 +1,5 @@
 # PolymerForm
-PolymerForm lets you create google polymer-like style form easily.
+PolymerForm lets you create google [polymer](https://www.polymer-project.org/0.5/components/paper-input/demo.html)-like style form easily.
 
 
 ![](http://takuro.ws/gh/polymer-form.gif)
@@ -30,13 +30,11 @@ PolymerForm lets you create google polymer-like style form easily.
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="js/jquery.polymer-form.min.js"></script>
 ```
-
 2. Create some input elements.
 ```
 <input type="text" label="Name" name="name" class="demo-form">
 <input type="password" label="Password" name="password" class="demo-form">
 ```
-
 3. Kick polymerForm function.
 ```
 $(document).ready(function(){

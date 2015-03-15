@@ -22,7 +22,7 @@ PolymerForm lets you create google [polymer](https://www.polymer-project.org/0.5
 
 ## Get started
 
-1. Import jQuery and PolymerForm.
+- Import jQuery and PolymerForm.
 ```
 <!-- CSS -->
 <link rel="stylesheet" href="css/jquery.polymer-form.min.css"/>
@@ -30,12 +30,12 @@ PolymerForm lets you create google [polymer](https://www.polymer-project.org/0.5
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="js/jquery.polymer-form.min.js"></script>
 ```
-2. Create some input elements.
+- Create some input elements.
 ```
 <input type="text" label="Name" name="name" class="demo-form">
 <input type="password" label="Password" name="password" class="demo-form">
 ```
-3. Kick polymerForm function.
+- Kick polymerForm function.
 ```
 $(document).ready(function(){
     $(".demo-form").polymerForm();

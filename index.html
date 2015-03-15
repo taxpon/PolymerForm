@@ -28,7 +28,14 @@
 </head>
 <body>
 
-<div class="fb-like" data-href="https://taxpon.github.io/PolymerForm" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
 <div class="github-fork-ribbon-wrapper right">
     <div class="github-fork-ribbon" style="background: #4F4343;">
@@ -53,14 +60,8 @@
         <li><a href="#api">API</a></li>
         <li><a class="red" href="https://github.com/taxpon/PolymerForm">Download on GitHub</a></li>
         <li>
-            <div id="fb-root"></div>
-            <script>(function(d, s, id) {
-                var js, fjs = d.getElementsByTagName(s)[0];
-                if (d.getElementById(id)) return;
-                js = d.createElement(s); js.id = id;
-                js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
-                fjs.parentNode.insertBefore(js, fjs);
-            }(document, 'script', 'facebook-jssdk'));</script>
+            <div class="fb-like" data-href="https://taxpon.github.io/PolymerForm" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
+
         </li>
         <li>
             <a href="https://twitter.com/share" class="twitter-share-button" data-count="none" data-dnt="true">Tweet</a>

@@ -301,3 +301,29 @@ code{
     }
   }
 }
+
+/////////////////////////////////////
+// Footer
+/////////////////////////////////////
+._footer{
+  text-align: center;
+  .social-box{
+    line-height: 10px;
+    li{
+      display: inline-block;
+      margin: 0 10px;
+    }
+    .fb-button{
+
+    }
+    .tw-button{
+
+    }
+  }
+
+  .copyright{
+    text-align: center;
+    margin: 70px auto 30px auto;
+    color: rgb(187, 187, 187);
+  }
+}

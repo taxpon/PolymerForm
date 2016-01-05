@@ -13,10 +13,10 @@
     <link rel="stylesheet" href="example/css/jquery.polymer-form.min.css"/>
     <link rel="stylesheet" href="example/css/style.css"/>
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.1.1/gh-fork-ribbon.min.css" />
-
+    <meta property="fb:admins" content="100001586643198" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="PolymerForm -jQuery plugin to create google polymer-like form easily" />
-    <meta property="og:url" content="https://taxpon.github.io/PolymerForm" />
+    <meta property="og:url" content="http://taxpon.github.io/PolymerForm/" />
     <meta property="og:description" content="PolymerForm is a jQuery plugin which enables you to create google polymer-like form without using polymer." />
     <meta property="og:image" content="http://takuro.ws/gh/polymer-form-og.png" />
     <meta name="twitter:card" content="summary_large_images">
@@ -114,25 +114,25 @@
                     <div class="step-title">1. Import jQuery and PolymerForm.</div>
                     <pre>
                         <code class="html">&lt;!-- CSS --&gt;
-                            &lt;link rel="stylesheet" href="css/jquery.polymer-form.min.css"/&gt;
-                            &lt;!-- JS --&gt;
-                            &lt;script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"&gt;&lt;/script&gt;
-                            &lt;script src="js/jquery.polymer-form.min.js"&gt;&lt;/script&gt;</code>
+&lt;link rel="stylesheet" href="css/jquery.polymer-form.min.css"/&gt;
+&lt;!-- JS --&gt;
+&lt;script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script src="js/jquery.polymer-form.min.js"&gt;&lt;/script&gt;</code>
                     </pre>
                 </li>
                 <li>
                     <div class="step-title">2. Create some input elements.</div>
                     <pre>
                         <code class="html">&lt;input type="text" label="Name" name="name" class="demo-form"&gt;
-                            &lt;input type="password" label="Password" name="password" class="demo-form"&gt;</code>
+&lt;input type="password" label="Password" name="password" class="demo-form"&gt;</code>
                     </pre>
                 </li>
                 <li>
                     <div class="step-title">3. Kick polymerForm function.</div>
                     <pre>
                         <code class="javascript">$(document).ready(function(){
-                            $(".demo-form").polymerForm();
-                            });</code>
+    $(".demo-form").polymerForm();
+});</code>
                     </pre>
                 </li>
                 <li>
@@ -197,6 +197,18 @@
                 </div>
                 <div class="example-result">
                     <input type="text" label="LabelColor" label-color="#F44336" bar-height='12px' active-color='#F44336' class="demo-form"/>
+                </div>
+            </div>
+            <div class="example-wrapper" id="example-default-value">
+                <h3>Default value setting</h3>
+                <div class="example-desc">
+                    Use origin property.
+                    <pre>
+                        <code class="html">&lt;input type="text" label="LabelColor" label-color="#F44336" bar-height='12px' active-color='#FF9800' class="demo-form"&gt;</code>
+                    </pre>
+                </div>
+                <div class="example-result">
+                    <input type="text" label="LabelColor" label-color="#F44336" bar-height='12px' active-color='#F44336' class="demo-form" value="Default Value"/>
                 </div>
             </div>
         </div>

@@ -202,9 +202,9 @@
             <div class="example-wrapper" id="example-default-value">
                 <h3>Default value setting</h3>
                 <div class="example-desc">
-                    Use origin property.
+                    Set value attribute as you usually do.
                     <pre>
-                        <code class="html">&lt;input type="text" label="LabelColor" label-color="#F44336" bar-height='12px' active-color='#FF9800' class="demo-form"&gt;</code>
+                        <code class="html">&lt;input type="text" label="LabelColor" label-color="#F44336" bar-height='12px' active-color='#FF9800' class="demo-form" value="Default Value"&gt;</code>
                     </pre>
                 </div>
                 <div class="example-result">
@@ -260,12 +260,12 @@
 
                 <pre>
                     <code class="javascript">$(document).ready(function(){
-                        $(".demo-form-by-arg").polymerForm({
-                        base_color: "#4CAF50",
-                        active_color: "#8BC34A",
-                        bar_height: "12px"
-                        });
-                        });</code>
+    $(".demo-form-by-arg").polymerForm({
+        base_color: "#4CAF50",
+        active_color: "#8BC34A",
+        bar_height: "12px"
+    });
+});</code>
                 </pre>
 
                 <div class="result-container">
@@ -306,21 +306,21 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/1.5.5/jquery.smooth-scroll.min.js"></script>
 <script src="example/js/jquery.polymer-form.min.js"></script>
 <script>
-    $(document).ready(function(){
-        $(".sample-form").polymerForm();
-        $(".demo-form").polymerForm();
-        $(".demo-form-by-arg").polymerForm({
-            base_color: "#4CAF50",
-            active_color: "#8BC34A",
-            bar_height: "12px"
-        });
-        hljs.initHighlightingOnLoad();
-
-        // Scroll
-        $('a[href^="#"]').smoothScroll({
-            duration : 500
-        });
+$(document).ready(function(){
+    $(".sample-form").polymerForm();
+    $(".demo-form").polymerForm();
+    $(".demo-form-by-arg").polymerForm({
+        base_color: "#4CAF50",
+        active_color: "#8BC34A",
+        bar_height: "12px"
     });
+    hljs.initHighlightingOnLoad();
+
+    // Scroll
+    $('a[href^="#"]').smoothScroll({
+        duration : 500
+    });
+});
 
 </script>
 </body>

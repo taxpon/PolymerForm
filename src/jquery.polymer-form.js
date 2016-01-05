@@ -27,7 +27,7 @@
             var bar_height = $(this).attr('bar-height') || setting.bar_height;
             var label_color = $(this).attr('label-color') || setting.label_color;
             var origin = $(this).attr('origin') || setting.origin;
-            var has_default_value = $(this).attr('value') != "" || setting.has_default_value;
+            var has_default_value = (($(this).attr('value') != "") && ($(this).attr('value') != undefined)) || setting.has_default_value;
 
             // Validation
             if(origin !== 'left' && origin !== 'right' && origin !== 'center'){

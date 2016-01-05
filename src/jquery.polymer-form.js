@@ -13,7 +13,8 @@
             label_color: "#999999",
             origin: "center",
             margin_top: "20px",
-            margin_bottom: "50px"
+            margin_bottom: "50px",
+            has_default_value: false
         }, options);
 
         this.each(function(){
@@ -26,6 +27,7 @@
             var bar_height = $(this).attr('bar-height') || setting.bar_height;
             var label_color = $(this).attr('label-color') || setting.label_color;
             var origin = $(this).attr('origin') || setting.origin;
+            var has_default_value = $(this).attr('value') != "" || setting.has_default_value;
 
             // Validation
             if(origin !== 'left' && origin !== 'right' && origin !== 'center'){
@@ -83,6 +85,10 @@
             $dom_label.click(function(){
                 thiz.focus();
             });
+
+            if(has_default_value) {
+                $(this).parent().addClass("dirty");
+            }
         });
 
         return this;
